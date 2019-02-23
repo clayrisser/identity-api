@@ -1,13 +1,13 @@
-import { IdentityApiApplication } from '../..';
+import {IdentityApiApplication} from '../..';
 import {
   createRestAppClient,
   givenHttpServerConfig,
-  Client
+  Client,
 } from '@loopback/testlab';
 
 export async function setupApplication(): Promise<AppWithClient> {
   const app = new IdentityApiApplication({
-    rest: givenHttpServerConfig()
+    rest: givenHttpServerConfig(),
   });
 
   await app.boot();
@@ -15,7 +15,7 @@ export async function setupApplication(): Promise<AppWithClient> {
 
   const client = createRestAppClient(app);
 
-  return { app, client };
+  return {app, client};
 }
 
 export interface AppWithClient {

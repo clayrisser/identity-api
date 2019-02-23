@@ -1,4 +1,4 @@
 {
   "$schema": "http://json.schemastore.org/tslint",
-  "extends": ["airbnb"]
+  "extends": ["@loopback/tslint-config/tslint.common.json"]
 }
