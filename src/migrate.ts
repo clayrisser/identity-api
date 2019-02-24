@@ -1,4 +1,4 @@
-import {IdentityApiApplication} from './application';
+import { IdentityApiApplication } from './application';
 
 export async function migrate(args: string[]) {
   const existingSchema = args.includes('--rebuild') ? 'drop' : 'alter';
@@ -6,7 +6,7 @@ export async function migrate(args: string[]) {
 
   const app = new IdentityApiApplication();
   await app.boot();
-  await app.migrateSchema({existingSchema});
+  await app.migrateSchema({ existingSchema });
 
   // Connectors usually keep a pool of opened connections,
   // this keeps the process running even after all work is done.

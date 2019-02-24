@@ -1,7 +1,7 @@
-import {IdentityApiApplication} from './application';
-import {ApplicationConfig} from '@loopback/core';
+import { IdentityApiApplication } from './application';
+import { ApplicationConfig } from '@loopback/core';
 
-export {IdentityApiApplication};
+export { IdentityApiApplication };
 
 export async function main(options: ApplicationConfig = {}) {
   const app = new IdentityApiApplication(options);
