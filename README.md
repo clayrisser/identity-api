@@ -8,7 +8,6 @@
 
 Please ★ this repo if you found it useful ★ ★ ★
 
-![](assets/identity-api.png)
 
 ## Features
 
