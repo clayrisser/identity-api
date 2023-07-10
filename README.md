@@ -4,6 +4,8 @@
 
 > an identity api built with loopback 4
 
+![](assets/identity-api.png)
+
 Please ★ this repo if you found it useful ★ ★ ★
 
 
